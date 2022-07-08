@@ -1,18 +1,3 @@
-//console.log(j_all.keys);
-
-/*// texts
-var texts = _.map(j_all, "text");
-
-// create variables for all metrics
-var frequencies = _.map(j_all, "frequency");
-var char_lens = _.map(j_all, "char_len");
-var token_counts = _.map(j_all, "token_count");
-var token_lens = _.map(j_all, "token_len");
-var sent_lens = _.map(j_all, "sent_len");
-var pos_divs = _.map(j_all, "pos_diversity");
-var sentiws = _.map(j_all, "sentiws");
-var germansentiment = _.map(j_all, "germansentiment");*/
-
 // function to show all passages texts within their own div
 
 function getPassages() {
@@ -28,11 +13,6 @@ function getPassages() {
 
 // call getPassages()
 getPassages();
-
-/*
-function insertAfter(referenceNode, newNode) {
-    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
-  }*/
 
 // color definitions
 
@@ -182,24 +162,3 @@ function addSentiDonut(metrics, name) {
 
 toggleSentiCharts(sentiws, "sentiws-button", "sentiws-g");
 toggleSentiCharts(germansentiment, "germansentiment-button", "germansentiment-g");
-
-/*
-//change bg-color function
-
-const changeStyle = function(div, bgcolor, color) {
-    div.style.backgroundColor = bgcolor;
-    div.style.color = color;
-}; 
-
-// add event listeners to all passages
-
-var ChildDivs = document.getElementById("app").getElementsByTagName('div');
-
-for(var i=0; i< ChildDivs.length; i++ ) {
-    (function () {
-        var childDiv = ChildDivs[i];
-        var childId = childDiv.id;
-        childDiv.addEventListener("click", function() {if (document.getElementById("vis_" + childId) == null) {create_vis(childId); changeStyle(childDiv, "black", "white")} else {document.getElementById("vis_" + childId).remove(); changeStyle(childDiv, "white", "black")}}, false);
-        //document.getElementById("vis_" + childId).addEventListener("click", changeStyle(childDiv, "white", "black"), false);
-}());
-}*/
