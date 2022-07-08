@@ -12,3 +12,8 @@ authors:
     family-names: Sophie
     affiliation: HU Berlin
     orcid: 'https://orcid.org/0000-0002-8303-1798'
+date-released: "2022-07-08"
+identifiers:
+  - description: This is the archived snapshot of version 1.0.0 of the masters_thesis Github repository
+    type: doi
+    value: https://doi.org/10.5281/zenodo.6811611
