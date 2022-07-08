@@ -1,0 +1,114 @@
+Linear Regression Results
+
+# J(C)
+# mit trendline_options=dict(log_x=True)
+
+			OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.566
+Model:                            OLS   Adj. R-squared:                  0.565
+Method:                 Least Squares   F-statistic:                     340.6
+Date:                Wed, 05 Jan 2022   Prob (F-statistic):           3.04e-49
+Time:                        16:21:30   Log-Likelihood:                -78.484
+No. Observations:                 263   AIC:                             161.0
+Df Residuals:                     261   BIC:                             168.1
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          1.7754      0.062     28.703      0.000       1.654       1.897
+x1             0.7684      0.042     18.457      0.000       0.686       0.850
+==============================================================================
+Omnibus:                       43.905   Durbin-Watson:                   1.048
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               74.717
+Skew:                          -0.923   Prob(JB):                     5.96e-17
+Kurtosis:                       4.846   Cond. No.                         6.46
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+# J(NC)
+# dropped all 0 values for x1 before
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.783
+Model:                            OLS   Adj. R-squared:                  0.782
+Method:                 Least Squares   F-statistic:                     766.5
+Date:                Wed, 05 Jan 2022   Prob (F-statistic):           2.41e-72
+Time:                        18:10:52   Log-Likelihood:                -97.594
+No. Observations:                 214   AIC:                             199.2
+Df Residuals:                     212   BIC:                             205.9
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          1.2542      0.057     22.195      0.000       1.143       1.366
+x1             1.1876      0.043     27.686      0.000       1.103       1.272
+==============================================================================
+Omnibus:                        4.615   Durbin-Watson:                   1.107
+Prob(Omnibus):                  0.100   Jarque-Bera (JB):                3.024
+Skew:                          -0.103   Prob(JB):                        0.220
+Kurtosis:                       2.455   Cond. No.                         4.24
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+# K(C)
+
+                        OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.659
+Model:                            OLS   Adj. R-squared:                  0.658
+Method:                 Least Squares   F-statistic:                     1034.
+Date:                Wed, 05 Jan 2022   Prob (F-statistic):          3.75e-127
+Time:                        15:47:15   Log-Likelihood:                -166.08
+No. Observations:                 538   AIC:                             336.2
+Df Residuals:                     536   BIC:                             344.7
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          1.3626      0.042     32.306      0.000       1.280       1.445
+x1             1.0689      0.033     32.149      0.000       1.004       1.134
+==============================================================================
+Omnibus:                       19.690   Durbin-Watson:                   1.136
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               21.085
+Skew:                          -0.484   Prob(JB):                     2.64e-05
+Kurtosis:                       3.055   Cond. No.                         5.93
+==============================================================================
+
+
+# K(NC)
+# dropped all 0 values for x1 before
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.696
+Model:                            OLS   Adj. R-squared:                  0.695
+Method:                 Least Squares   F-statistic:                     1109.
+Date:                Wed, 05 Jan 2022   Prob (F-statistic):          2.85e-127
+Time:                        18:06:08   Log-Likelihood:                -204.21
+No. Observations:                 486   AIC:                             412.4
+Df Residuals:                     484   BIC:                             420.8
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          1.5836      0.042     37.920      0.000       1.502       1.666
+x1             0.9136      0.027     33.297      0.000       0.860       0.968
+==============================================================================
+Omnibus:                       32.006   Durbin-Watson:                   0.873
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               36.468
+Skew:                          -0.651   Prob(JB):                     1.20e-08
+Kurtosis:                       3.328   Cond. No.                         5.24
+==============================================================================

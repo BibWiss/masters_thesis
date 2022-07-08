@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vis.css">
+<title>"Michael Kohlhaas" Passages</title>
+</head>
+<body>
+
+<ul>
+    <p class="sidebar-text">Click on one or more of the buttons below to show and compare the different metrics for each passage! (or switch to <a href=".\judenbuche.html">Die Judenbuche</a> to view another literary text)</p>
+    <li id="frequency-option"><button id="frequency-button" type="button" class="not-active btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+        Frequency
+      </button></li>
+      <li id="charlen-option"><button id="charlen-button" type="button" class="not-active btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+        Character Length
+      </button></li>
+      <li id="tokenlen-option"><button id="tokenlen-button" type="button" class="not-active btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+        Token Length
+      </button></li>
+      <li id="sentlen-option"><button id="sentlen-button" type="button" class="not-active btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+        Sentence Length
+      </button></li>
+      <li id="posdiv-option"><button id="posdiv-button" type="button" class="not-active btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+        POS Diversity
+      </button></li>
+      <li id="sentiws-option"><button id="sentiws-button" type="button" class="not-active btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+        SentiWS
+      </button></li>
+      <li id="germansentiment-option"><button id="germansentiment-button" type="button" class="not-active btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+        germansentiment
+      </button></li>
+</ul> 
+
+<div id="description" class="container">
+<h1>Michael Kohlhaas</h1>
+<p>(Heinrich von Kleist)</p>
+</div>
+
+<div id="frequencies"></div>
+<div id="app"></div>
+<script type="text/javascript" src="kohlhaas.js"></script>
+<script type="text/javascript">
+  // texts
+  var texts = _.map(k_all, "text");
+
+  // create variables for all metrics
+  var frequencies = _.map(k_all, "frequency");
+  var char_lens = _.map(k_all, "char_len");
+  var token_counts = _.map(k_all, "token_count");
+  var token_lens = _.map(k_all, "token_len");
+  var sent_lens = _.map(k_all, "sent_len");
+  var pos_divs = _.map(k_all, "pos_diversity");
+  var sentiws = _.map(k_all, "sentiws");
+  var germansentiment = _.map(k_all, "germansentiment");
+</script>
+<script type="text/javascript" src="vis.js"></script> 
+</body>
+</html> 

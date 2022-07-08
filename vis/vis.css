@@ -1,0 +1,106 @@
+#app div:hover {
+    background-color: darkgray !important;
+    color: white !important;
+    /*cursor: pointer;*/
+}
+
+/*links*/
+
+a::after {
+    content: "⭧";
+    padding: 1%;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover {
+    color: #5d73b8;
+}
+
+/*sidebar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    border-radius: 15px;
+  }
+
+/*sidebar text*/
+.sidebar-text {
+    margin: 3%;
+}
+
+/*sidebar buttons*/
+button {
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.active {
+    background-color: black !important;
+    border-color: black !important;
+    color: white !important;
+    background-image: none !important;
+}
+
+.active::before {
+    content: "🞭";
+}
+
+.not-active::before {
+    content: "✚";
+}
+
+#frequency-option button{
+    background-color: #509F98;
+    border-color: #509F98;
+}
+
+#charlen-option button{
+    background-color: #C16152;
+    border-color: #C16152;
+}
+
+#tokenlen-option button{
+    background-color: #EDB85C;
+    border-color: #EDB85C;
+}
+
+#sentlen-option button{
+    background-color: #5d73b8;
+    border-color: #5d73b8;
+}
+
+#posdiv-option button{
+    background-color: #9B8945;
+    border-color: #9B8945;
+}
+
+#germansentiment-option button, #sentiws-option button {
+    background-image: linear-gradient(to right, #457361, #96362F);
+}
+/*#description{margin: 10px 0px 0px 105px;}*/
+
+.container{
+    border-radius: 15px;
+    width: 75%;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+/*charts*/
+g {
+    position:absolute;
+}
+
+svg{
+    margin-right: 1%;
+}
