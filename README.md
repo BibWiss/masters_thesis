@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/511910541.svg)](https://zenodo.org/badge/latestdoi/511910541)
+
 # Master's Thesis Sophie Schneider (Supplementary Material) 
 
 ## Description
